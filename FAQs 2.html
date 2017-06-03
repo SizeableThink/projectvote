@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FAQs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: auto;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+	  
+	  /* Affects the content on the sides */
+      .row.content {height:auto;} 
+    }
+	
+	/* Shows/Hides Text */
+	.more {
+      display: none;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666; }
+   a.showLink, a.hideLink {
+      text-decoration: none;
+      color: #36f;
+      padding-left: 8px;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+      background: transparent url(up.gif) no-repeat left; }
+   a.showLink:hover, a.hideLink:hover {
+      border-bottom: 1px dotted #36f; 
+	  }
+	  
+  </style>
+  
+  <script language="javascript" type="text/javascript">
+  /* Javascript for hiding/showing the answers to each question  */
+  
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  
+  <!-- Navigation bar settings -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  
+	  <!-- Logo on the top left of the page -->
+      <img class="navbar-brand" src="splash.jpg" />
+    </div>
+	
+	<!-- Navigation bar at the top -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+	
+	<!-- List of all the pages in the navigation bar, active one is the one highlighted in the navigation bar and this page-->
+      <ul class="nav navbar-nav">
+        <li><a href="file:///F:\\Alternative Voting Website\index2.html">Home</a></li>
+        <li><a href="file:///F:\\Alternative Voting Website\Approval Voting 2.html">Approval Voting</a></li>
+        <li><a href="file:///F:\\Alternative Voting Website\Plurality Voting 2.html">Plurality Voting</a></li>
+        <li><a href="file:///F:\\Alternative Voting Website\Rank Choice 2.html">Rank Choice</a></li>
+		<li><a href="file:///F:\\Alternative Voting Website\Range Voting 2.html">Range Voting</a></li>
+		<li class="active"><a href="file:///F:\\Alternative Voting Website\FAQs 2.html">FAQs</a></li>
+      </ul>
+	  
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+  
+  <!-- Column to the left of the page -->
+    <div class="col-sm-2 sidenav">
+	
+	<!-- well class gives the text bubble a textured background -->
+      <div class="well">
+		<p>What is the importance of voting?</p>
+		
+		<!-- Used to hide and show the answers to each question -->
+		<a href="#" id="1-show" class="showLink" onclick="showHide('1');return false;">Find out...</a></p>
+		<div id="1" class="more">
+         <p>Voting is important because it allows people to <strong>solve disputes and differences of opinion in a civil manner</strong>. It also allows people to <strong>vote for who best represents them</strong> in regards to voting for a representative, senator, or even a president and vice-president.</p>
+         <p><a href="#" id="1-hide" class="hideLink" onclick="showHide('1');return false;">Hide...</a></p>
+      </div>
+	  </div>
+	  
+	  <!-- well class gives the text bubble a textured background -->
+	  <div class="well">
+		<p>Does my vote matter?</p>
+		
+		<!-- Used to hide and show the answers to each question -->
+		<a href="#" id="2-show" class="showLink" onclick="showHide('2');return false;">Find out...</a></p>
+		<div id="2" class="more">
+		<p>In short answer, <strong>yes</strong>. Your vote is crucial in turning the tide in favor of whoever or whatever you wish to win a vote.</p>
+         <p><a href="#" id="2-hide" class="hideLink" onclick="showHide('2');return false;">Hide...</a></p>
+      </div>
+	  </div>
+    </div>
+	
+	<!-- Class responsible for the information that appears in the middle of the page -->
+    <div class="col-sm-8 text-left"> 
+	
+	<!-- FAQ Banner that appears in the middle of the page -->
+      <img class="img-responsive" src="FAQsDiagram.jpg" />
+    </div>
+	
+	<!-- Column to the right of the page -->
+    <div class="col-sm-2 sidenav">
+	
+	<!-- well class gives the text bubble a textured background -->
+      <div class="well">
+        <p>What is the best electoral system?</p>
+		
+		<!-- Used to hide and show the answers to each question -->
+		<a href="#" id="3-show" class="showLink" onclick="showHide('3');return false;">Find out...</a></p>
+		<div id="3" class="more">
+		<p>There is no definite answer, as <strong>every system comes with its unique set of flaws</strong>. However, some systems allow the voter to truly vote their heart rather than not voting or voting for someone/something they think will win.</p>
+         <p><a href="#" id="3-hide" class="hideLink" onclick="showHide('3');return false;">Hide...</a></p>
+      </div>
+      </div>
+	  
+	  <!-- well class gives the text bubble a textured background -->
+      <div class="well">
+        <p>What is the purpose of this site?</p>
+		
+		<!-- Used tohide and show the answers to each question -->
+		<a href="#" id="4-show" class="showLink" onclick="showHide('4');return false;">Find out...</a></p>
+		<div id="4" class="more">
+		<p>The purpose of this site is to <strong>inform you</strong>, the visitor, of the <strong>different type of voting systems</strong>, what the <strong>pros/cons</strong> are of each system, and <strong>how each system works</strong>.</p>
+         <p><a href="#" id="4-hide" class="hideLink" onclick="showHide('4');return false;">Hide...</a></p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom of the page -->
+<footer class="container-fluid text-center">
+  <p>FYRE 2017</p>
+</footer>
+
+</body>
+</html>
+
